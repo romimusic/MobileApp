@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Romina Ingallina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assess 1</title>
+    <link rel="shortcut icon" href="../assets/logo_header.png">
+	<link rel="stylesheet" href="../css/jqm.css" />
+	<link rel="stylesheet" href="../css/style.css">
+<script src="../jquery.js"></script>
+<script src="../jqm.js"></script>
+<script src="../index.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id = "home" style="background-color: var(--secondary-color);">
+
+		<header data-role="header" class="header">
+			<figure class="header__logo">
+				<a href="./views/about.html"><img src="../assets/logo_header.png" alt="Romina Ingallina"></a>
+			</figure>
+			<h1 class="header__title">COIT20269 Assessment 1</h1>
+
+			<a href="#mypanel" data-role="button" data-inline="true" class="header__nav__button" style="background-color: var(--primary-color); color: var(--text-color); margin-top: 10px;">☰</a>
+
+		</header><!-- /header -->	
+
+        <main role="main" class="main">
+            <h2>Me</h2>
+
+            <section class="wrapper cards">
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <figure>
+                                <img src="../assets/rominaIngallina.JPG" alt="Romina Ingallina">
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div class="content">
+                                <h3 class="cardTitle">Romina Ingallina</h3>
+                                <p>I'm fanatic of the trips and lover of the nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> <!-- / main-->
+
+        <footer data-role="footer" data-position="fixed" class="footer">
+            <h4>Romina Ingallina &copy; 2021</h4>
+        </footer><!-- /footer -->
+
+        <div data-role="panel" id="mypanel" data-position="left" data-display="overlay" data-theme="a" style="background-color: var(--primary-color); width: 200px;">
+            <!-- panel content goes here -->
+            <div class="panel-content">
+                <ul data-role="listview" data-inset="true" data-theme="a" >
+                    <li class="slide__menu__option"><a href="../index.html"><img src="../assets/icons/homepage.png" alt="home" width="60px" height="60px"></a></li>
+                    <li class="slide__menu__option"><a href="./about.html">About Me</a></li>
+                    <li class="slide__menu__option"><a href="./form.html" data-icon="list" data-iconpos="right" data-inline="true">Form</a></li>
+                    <li class="slide__menu__option"><a href="./formData.html">Form Data</a></li>
+                    <li class="slide__menu__option"><a href="./apiData.html">API Data</a></li>
+                    <li class="slide__menu__option"><a href="./studentChoice.html">Student Choice</a></li>
+                    <li class="slide__menu__option"><a href="#"  id="localClearAbout">Clear All Data</a></li>
+                </ul>
+            </div>   
+
+        </div><!-- /panel -->
+
+
+    </div>
+</body>
